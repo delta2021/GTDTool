@@ -1,0 +1,92 @@
+:root{
+    --color-primary-dark:#95a5a6;
+    --color-primary-light:#ecf0f1;
+    --color-primary-medium: #bdc3c7;
+    --color-border: #dcdde1;
+    --color-yellow: #f7d794;
+    font-size: 10px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    justify-content: stretch;
+    padding: 0 2rem;
+
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+a:link, 
+a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+.hidden {
+    display: none;
+}
+
+.u-vertical-align {
+    vertical-align: middle;
+}
+
+.u-font-size-medium {
+    font-size: 2rem;
+}
+
+.u-margin-right-small{
+    margin-right: 2rem;
+}
+
+.u-margin-right-medium{
+    margin-right: 3rem;
+}
+
+.u-list-style-reset {
+    list-style: none;
+}
+
+.u-float-right {
+    float: right;
+}
+
+.bg-yellow-center {
+    background-color: var(--color-yellow);
+    padding-left: 1rem;
+}
+
+
+ul {
+    padding: 0;
+}
+
+.flex-space-around {
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-1{
+    padding-right: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    border-bottom: solid 1px #000;
+    border-right: solid 1px #000;
+}
+
+.flex-1 input{
+    border: none;
+    border-left: solid 1px #000;
+    border-right: solid 1px #000;
+    border-top: solid 1px #000;
+    padding-left: 1.5rem;
+}

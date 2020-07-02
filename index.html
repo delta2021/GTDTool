@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTD Tool</title>
+    <link rel="stylesheet" href="styles/utilities.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h1>
+        GTD Tools
+        </h1>
+    </header>
+    <main class="container">
+      
+ 
+        <div class="category">
+            <div class="category__all-task">
+                <h2 class="all-task__title">所有任务</h2>
+                <ul class="all-task__task-list u-list-style-reset" id="allTask">
+                  
+                </ul>
+            </div>
+            <div class="category__file">
+                <h2 class="file__title">分类列表</h2>
+                <div class="file__file-list-container">
+                    <h2 id='root'>root <input type="radio" name="isSelected" id="isSelected"></h2>
+                    <ul class="file__file-list u-list-style-reset" id="files">
+                    </ul>
+                </div>
+            </div>
+
+            <div class="close-all" id="closeAllFile">
+                <a href="#">全部收起</a>
+            </div>
+           
+            <div class="category__add">
+                
+                <div id="newEntry" class="hidden">
+                    <div class="create-new-entry">
+                        <label for="">列表名称:</label><input type="text" id="newEntryName" class="create-new-entry__input">
+                        <a href="#" class="u-float-right" id="submitNewList"><ion-icon class="u-font-size-medium" name="checkmark-outline"></ion-icon></a>
+                    </div>
+                </div>
+                
+                <a href="#" class="btn--add" id="addFile">
+                    <ion-icon class="u-font-size-medium" name="add-outline"></ion-icon> 
+                    <span >新增分类</span>
+                </a>
+
+              
+            
+
+            </div>
+        </div>
+        <div class="task-list">
+            <div class="task-list__menu">
+                <select name="" id="filter">
+                    <option value="all">全部</option>
+                    <option value="todo">未完成</option>
+                    <option value="completed">已完成</option>
+                </select>
+                
+                <label for="status" class="task-list__status">管理
+                    <input type="checkbox" name="status" id="statusOption">
+                </label>
+
+           
+                
+            </div>
+            
+            <div class="task-list__operation hidden" id="manageStatus">
+                <a href="#" id="tagDone">标记为已完成|</a>
+                <a href="#" id="tagToDo">标记为待办|</a>
+                <a href="#" id="tagDelete">删除</a>
+            </div>
+            <ul class="task-list__items u-list-style-reset" id="listItems">
+              
+            </ul>
+
+         
+            <div class="task-list__add">
+
+
+                <div>
+                    <a href="#" class="btn--add" id="addTask">
+                        <ion-icon class="u-font-size-medium" name="add-outline"></ion-icon> 
+                        <span>新增任务</span>
+                    
+                    </a>
+                    <a href="#" class="u-float-right u-font-size-medium hidden" id="cancelNewTask">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </a>
+                    <a href="#" class="u-float-right u-font-size-medium hidden" id="submitNewTask">
+                        <ion-icon name="checkmark-outline"></ion-icon>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+
+      
+            <div class="details" id="detailBoard">
+                
+            
+            </div>
+    
+    </main>
+    
+    
+    <script src="scripts/utility.js"></script>
+    <script src="scripts/constructor.js"></script>
+    <script src="scripts/template.js"></script>
+    <script src="scripts/dom.js"></script>
+    <script src="scripts/eventHandlers.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
